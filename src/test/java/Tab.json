@@ -1,0 +1,123 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "array",
+  "title": "The Root Schema",
+  "items": {
+    "$id": "#/items",
+    "type": "object",
+    "title": "The Items Schema",
+    "required": [
+      "_id",
+      "businessUnitId",
+      "name",
+      "public",
+      "default",
+      "tabType",
+      "permission",
+      "marketSid",
+      "createdAt",
+      "onlyArchivedDeliveryItems"
+    ],
+    "properties": {
+      "_id": {
+        "$id": "#/items/properties/_id",
+        "type": "string",
+        "title": "The _id Schema",
+        "default": "",
+        "examples": [
+          "5ba9ff262b00001100362114"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "businessUnitId": {
+        "$id": "#/items/properties/businessUnitId",
+        "type": "string",
+        "title": "The Businessunitid Schema",
+        "default": "",
+        "examples": [
+          "5ba9fef73e46833b0e3b7440"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "name": {
+        "$id": "#/items/properties/name",
+        "type": "string",
+        "title": "The Name Schema",
+        "default": "",
+        "examples": [
+          "All"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "public": {
+        "$id": "#/items/properties/public",
+        "type": "boolean",
+        "title": "The Public Schema",
+        "default": false,
+        "examples": [
+          true
+        ]
+      },
+      "default": {
+        "$id": "#/items/properties/default",
+        "type": "boolean",
+        "title": "The Default Schema",
+        "default": false,
+        "examples": [
+          true
+        ]
+      },
+      "tabType": {
+        "$id": "#/items/properties/tabType",
+        "type": "string",
+        "title": "The Tabtype Schema",
+        "default": "",
+        "examples": [
+          "Order"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "permission": {
+        "$id": "#/items/properties/permission",
+        "type": "string",
+        "title": "The Permission Schema",
+        "default": "",
+        "examples": [
+          "traffic.tab.default.view.all"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "marketSid": {
+        "$id": "#/items/properties/marketSid",
+        "type": "string",
+        "title": "The Marketsid Schema",
+        "default": "",
+        "examples": [
+          "270"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "createdAt": {
+        "$id": "#/items/properties/createdAt",
+        "type": "string",
+        "title": "The Createdat Schema",
+        "default": "",
+        "examples": [
+          "2018-09-25T09:25:58.738+0000"
+        ],
+        "pattern": "^(.*)$"
+      },
+      "onlyArchivedDeliveryItems": {
+        "$id": "#/items/properties/onlyArchivedDeliveryItems",
+        "type": "boolean",
+        "title": "The Onlyarchiveddeliveryitems Schema",
+        "default": false,
+        "examples": [
+          false
+        ]
+      }
+    }
+  }
+}
